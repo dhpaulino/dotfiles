@@ -221,4 +221,9 @@ for_window [class = "Google-chrome|Chromium-browser"] layout tabbed
 
 #lockscreen
 bindsym $mod+BackSpace exec lock
-exec xautolock -time 1 -locker 'lock' &
+exec --no-startup-id xautolock -time 5 -locker "lock"
+
+#wallpaper
+exec --no-startup-id nitrogen --restore
+
+

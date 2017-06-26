@@ -4,6 +4,9 @@ apt-get install i3 i3blocks
 #font-awesome
 apt-get install fonts-font-awesome
 
+#wallpaper
+apt-get install nitrogen
+
 #locker
 sudo apt-get install xautolock
 apt-get install scrot
