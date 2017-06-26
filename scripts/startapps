@@ -1,0 +1,7 @@
+nohup google-chrome &
+nohup subl &
+nohup i3-sensible-terminal &
+nohup i3-sensible-terminal &
+nohup spotify &
+sleep 1
+i3-msg restart
