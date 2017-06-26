@@ -1,4 +1,4 @@
-nohup google-chrome &
+nohup chromium-browser &
 nohup subl &
 nohup i3-sensible-terminal &
 nohup i3-sensible-terminal &
