@@ -29,7 +29,19 @@ command=~/.config/i3blocks/blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
+
+[playerctl]
+label=
+instance=spotify
+interval=2
+min_width=1300
+align=center
+
 # Part 1
+
+#[volume-pulseaudio]
+#command=~/.config/i3blocks/blocks/volume-pulseaudio -S -f 2     
+#interval=persist
 
 [audio]
 label=
@@ -45,10 +57,10 @@ interval=1
 #label=
 #interval=1
 
-[battery]
-label=
-instance=0
-interval=5
+#[battery]
+#label=
+#instance=0
+#interval=5
 
 # Part 2
 
@@ -67,9 +79,9 @@ interval=5
 
 # Part 3
 
-[cpu]
-label=
-interval=2
+#[cpu]
+#label=
+#interval=2
 
 [datetime]
 label=
@@ -124,10 +136,10 @@ interval=5
 #instance=~/.gmx-private
 #interval=60
 
-[memory]
-label=
-instance=mem;free
-interval=30
+#[memory]
+#label=
+#instance=mem;free
+#interval=30
 
 #[memory]
 #label=
@@ -156,10 +168,6 @@ interval=10
 
 # Part 8
 
-[playerctl]
-label=
-instance=spotify
-interval=2
 
 #[process]
 #instance=http
@@ -181,14 +189,14 @@ interval=2
 #label=
 #interval=60
 
-[temperature]
-instance=Core
-label=
-interval=5
+#[temperature]
+#instance=Core
+#label=
+#interval=5
 
 [user]
 label=
-interval=once
+interval=1
 
 # Part 10
 
