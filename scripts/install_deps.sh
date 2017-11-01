@@ -1,6 +1,7 @@
 #!/bin/bash
 
-apt install xinit
+apt install xinit -y
+apt install dbus-x11 -y 
 apt-get install i3 i3blocks -y
 #i3-gaps
 
