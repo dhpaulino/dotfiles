@@ -9,6 +9,40 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+#############
+# Variables #
+#############
+
+set_from_resource $darkblack   color0  #000000
+set_from_resource $black       color8  #000000
+set_from_resource $darkred     color1  #000000
+set_from_resource $red         color9  #000000
+set_from_resource $darkgreen   color2  #000000
+set_from_resource $green       color10  #000000
+set_from_resource $darkyellow  color3  #000000
+set_from_resource $yellow      color11 #000000
+set_from_resource $darkblue    color4  #000000
+set_from_resource $blue        color12 #000000
+set_from_resource $darkmagenta color5  #000000
+set_from_resource $magenta     color13 #000000
+set_from_resource $darkcyan    color6  #000000
+set_from_resource $cyan        color14 #000000
+set_from_resource $darkwhite   color7  #000000
+set_from_resource $white       color15 #000000
+
+
+
+##########
+# Colors #
+##########
+
+#                       BORDER     	BACKGROUND 	TEXT   		INDICATOR
+client.focused          $red   		$blue	   	$white 		$black
+client.unfocused        $darkblack 	$black 		$white 		$darkwhite
+client.focused_inactive $darkblack 	$black     	$white 		$darkwhite
+client.urgent           $red       	$red       	$white 		$red
+
+
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -114,6 +148,7 @@ bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
+
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -234,4 +269,12 @@ exec --no-startup-id xautolock -time 10 -locker "lock"
 #wallpaper
 exec --no-startup-id nitrogen --restore
 
+#compositor
+exec --no-startup-id compton
+#gaps
+for_window [class="^.*"] border pixel 0
+gaps inner 20
+gaps outer  5
 
+bindsym $mod+Shift+p exec "i3-msg move workspace to output left" 
+bindsym $mod+p focus output left
