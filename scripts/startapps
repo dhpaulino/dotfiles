@@ -1,5 +1,5 @@
-nohup chromium-browser &
-nohup atom &
+nohup firefox &
+nohup code &
 nohup i3-sensible-terminal &
 nohup i3-sensible-terminal &
 nohup spotify &
