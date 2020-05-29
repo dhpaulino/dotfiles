@@ -152,10 +152,10 @@ interval=30
 #label=
 #interval=5
 
-[network]
-label=
-instance=eno1
-interval=10
+#[network]
+#label=
+#instance=wlp3s0
+#interval=10
 
 #[network]
 #label=
