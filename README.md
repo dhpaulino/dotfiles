@@ -9,8 +9,9 @@ Install configuration dependencies
 
 Put configuration in place
 ```console
-$ cp .config/i3/config ~/.config/i3/config
-$ cp -r .config/i3blocks ~/.config/
+$ mv ~/.config/i3/config ~/.config/i3/config.bak
+$ ln -s "$PWD/.config/i3/config" ~/.config/i3/config
+$ ln -s "$PWD/.config/i3blocks" ~/.config/
 $ ln -s "$PWD/scripts/lock" ~/.local/bin/
 $ ln -s "$PWD/scripts/startapps" ~/.local/bin/
 ```
