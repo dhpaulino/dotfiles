@@ -246,9 +246,9 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
 
 # Media player controls
-bindsym $mod+F5 exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause 
-bindsym $mod+F6 exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
-bindsym $mod+F7 exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next  
+bindsym $mod+F6 exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause 
+bindsym $mod+F7 exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+bindsym $mod+F8 exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next  
 
 #wallpaper
 #xec --no-startup-id nitrogen
@@ -271,9 +271,11 @@ exec --no-startup-id nitrogen --restore
 
 #compositor
 exec --no-startup-id compton
-#gaps
+
+# GAPS
 for_window [class="^.*"] border pixel 0
-gaps inner 20
+smart_gaps on # enable only with more than one container
+gaps inner 10
 gaps outer  5
 
 bindsym $mod+Shift+p exec "i3-msg move workspace to output left" 
