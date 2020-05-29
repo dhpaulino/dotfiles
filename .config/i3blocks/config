@@ -30,21 +30,12 @@ separator_block_width=15
 markup=none
 
 
-[datetime]
-label=
-instance=%H:%M %a, %d %b
-interval=5
-separator=false
-
-
 [playerctl]
 label=
 instance=spotify
 interval=2
+min_width=1300
 align=center
-separator=false
-min_width=980
-
 
 # Part 1
 
@@ -52,35 +43,24 @@ min_width=980
 #command=~/.config/i3blocks/blocks/volume-pulseaudio -S -f 2     
 #interval=persist
 
-[network]
-label=
-instance=wlp3s0
-interval=10
-separator=false
-separator_block_width=5
-
-[ssid]
-interval=60
-
-
 [audio]
 label=
 interval=1
 
 #[bandwidth]
-#instance=wlp3s0;in
+#instance=wlan0;in
 #label=
 #interval=1
 
 #[bandwidth]
-#instance=wlp3s0;out
+#instance=wlan0;out
 #label=
 #interval=1
 
-[battery]
-label=
-instance=0
-interval=5
+#[battery]
+#label=
+#instance=0
+#interval=5
 
 # Part 2
 
@@ -102,6 +82,10 @@ interval=5
 #[cpu]
 #label=
 #interval=2
+
+[datetime]
+label=
+interval=5
 
 #[display]
 #label=
@@ -170,10 +154,13 @@ interval=5
 
 [network]
 label=
-instance=enp2s0
+instance=eth0
 interval=10
 
-
+[network]
+label=
+instance=wlan0
+interval=10
 
 #[packages]
 #label=
@@ -197,6 +184,10 @@ interval=10
 #interval=30
 
 # Part 9
+
+#[ssid]
+#label=
+#interval=60
 
 #[temperature]
 #instance=Core
