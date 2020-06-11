@@ -1,5 +1,6 @@
+#!/bin/bash
 nohup firefox &
-nohup code &
+# nohup code &
 nohup i3-sensible-terminal &
 nohup i3-sensible-terminal &
 nohup spotify &

@@ -30,28 +30,6 @@ separator_block_width=15
 markup=none
 
 
-[datetime]
-label=
-instance=%H:%M %a, %d %b
-interval=5
-separator=false
-
-
-[playerctl]
-label=
-instance=spotify
-interval=2
-align=center
-separator=false
-min_width=980
-
-
-# Part 1
-
-#[volume-pulseaudio]
-#command=~/.config/i3blocks/blocks/volume-pulseaudio -S -f 2     
-#interval=persist
-
 [network]
 label=
 instance=wlp3s0
@@ -61,6 +39,29 @@ separator_block_width=5
 
 [ssid]
 interval=60
+separator=false
+min_width=220
+
+[playerctl]
+label=
+instance=spotify
+interval=2
+align=center
+separator=false
+min_width=820
+
+
+
+# Part 1
+
+#[volume-pulseaudio]
+#command=~/.config/i3blocks/blocks/volume-pulseaudio -S -f 2     
+#interval=persist
+
+[datetime]
+label=
+instance=%H:%M %a, %d %B
+interval=5
 
 
 [audio]
